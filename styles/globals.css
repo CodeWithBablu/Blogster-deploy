@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    body{
+        background:#1F2028;
+    }
+
+    .blur-backdrop{
+        backdrop-filter: blur(5px);
+        /* -webkit-backdrop-filter: blur(5px); */
+    }
+
+    .animation-delay-2000{
+        animation-delay: 2s;
+    }
+
+    .animation-delay-3000{
+        animation-delay: 3s;
+    }
+
+    .animation-delay-4000{
+        animation-delay: 4s;
+    }
+
+}
