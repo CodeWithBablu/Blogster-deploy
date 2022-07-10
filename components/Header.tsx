@@ -7,7 +7,7 @@ function Header() {
                 <div className="flex items-center space-x-5">
                     <Link href={"/"}>
                         <div className="flex max-w-5 justify-between items-center">
-                            <img className="w-25 h-10 object-contain cursor-pointer" src="./images/logo.svg" alt="" />
+                            <img className="w-25 h-10 object-contain cursor-pointer" src="/images/logo.svg" alt="" />
                             <span> 
                                 <h3 className="text-3xl font-extrabold font-mono text-sky-500 hover:cursor-pointer">
                                     Blogster

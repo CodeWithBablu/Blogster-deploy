@@ -33,6 +33,7 @@ export default async function createComment(
             comment,
         });
     } catch(err){
+        console.log("Could't send data");
         return res.status(500).json({message: `Counld't able to send Message`})
     };
     console.log("Comment Successfull");

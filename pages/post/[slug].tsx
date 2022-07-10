@@ -94,7 +94,6 @@ export default function Post( {post} : props ){
     const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>();
 
      const onSubmit: SubmitHandler<IFormInput> = async (data)=>{
-
         
         fetch('/api/createComment',{
             method: "POST",
@@ -115,7 +114,7 @@ export default function Post( {post} : props ){
     return (
         <main>
             <Header/>
-            <img className="w-full h-40 object-cover" src={urlFor(post.mainImage).url()!} alt="" />
+            <img className="w-full h-80 object-cover" src={urlFor(post.mainImage).url()!} alt="" />
 
             <article className="max-w-3xl mx-auto p-5">
                 <h1 className="text-sky-500 font-extrabold text-3xl mt-10 mb-3" >{post.title}</h1>
@@ -163,8 +162,8 @@ export default function Post( {post} : props ){
 
             { submitted?
             (
-                <div className="text-black flex flex-col p-10 my-10 bg-sky-400
-                    max-w-2xl mx-auto shadow-xl shadow-yellow-500">
+                <div className="text-black flex flex-col p-10 my-10 bg-rose-500
+                    max-w-2xl mx-auto shadow-2xl shadow-cyan-500">
                     <h1 className="text-3xl font-bold ">Thanks For Submitting your comment!!</h1>
                     <span>Once it has approved it, will appear below</span>
                 </div>
@@ -223,8 +222,7 @@ export default function Post( {post} : props ){
 
             {/* Comments */}
 
-            <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto 
-                shadow-lg shadow-indigo-500 space-y-2">
+            <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-2xl shadow-indigo-500 space-y-2">
                 <h3 className="text-4xl text-yellow-400 font-bold">Comments</h3>
                 <hr className="pb-2"/>
 
